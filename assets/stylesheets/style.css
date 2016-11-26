@@ -13,11 +13,21 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat', sans-serif;
 }
 
+/* ====== Section ====== */
+
+.jumbotron{
+  height: 100vh;
+  background-image: url(/assets/img/header.jpg);
+  background-size: cover;
+  background-color: #f5f5f5;
+}
 
 /* ====== Contact ====== */
 #copyright {
   color: #ffffff;
 }
+
+/* Contact */
 
 #contact{ 
   background-image: url('/assets/img/bg-contact.jpg'); 
@@ -39,6 +49,7 @@ h1,h2,h3,h4,h5,h6{
 #contact a:hover{ 
   text-decoration: none; 
   color: #dedede;
+  cursor: pointer;
 }
 
 #contact i{
@@ -319,6 +330,11 @@ input:focus ~ .highlight {
 
 .flex{
   display: flex;
+}
+
+.flex-outer{
+  display: flex;
+  align-items: center;
 }
 
 .full{
