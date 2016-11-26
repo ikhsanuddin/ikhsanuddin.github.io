@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6{
   margin-bottom: 45px; 
 }
 
-input {
+input, textarea {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   -webkit-appearance: none;
@@ -36,6 +36,7 @@ input {
   border-bottom: 1px solid #cccccc;
 }
 
+textarea:focus,
 input:focus { outline: none; }
 
 
@@ -56,6 +57,7 @@ label {
 
 /* active */
 
+textarea:focus ~ label, textarea.used ~ label, 
 input:focus ~ label, input.used ~ label {
   top: -20px;
   -webkit-transform: scale(.75);
@@ -91,6 +93,7 @@ input:focus ~ label, input.used ~ label {
 
 /* active */
 
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after,
 input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
 
@@ -108,7 +111,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
 
 /* active */
-
+textarea:focus ~ .highlight,
 input:focus ~ .highlight {
   -webkit-animation: InputHighlighter 0.3s ease;
           animation: InputHighlighter 0.3s ease;

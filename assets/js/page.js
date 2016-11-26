@@ -19,6 +19,14 @@ $(window, document, undefined).ready(function() {
       $this.addClass('used');
     else
       $this.removeClass('used');
+  }
+  
+  $('textarea').blur(function() {
+    var $this = $(this);
+    if ($this.val())
+      $this.addClass('used');
+    else
+      $this.removeClass('used');
   });
 
   var $ripples = $('.ripples');
