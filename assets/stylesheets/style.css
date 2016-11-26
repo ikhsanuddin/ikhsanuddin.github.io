@@ -15,10 +15,20 @@ h1,h2,h3,h4,h5,h6{
 
 
 /* ====== Contact ====== */
+#copyright {
+  color: #ffffff;
+}
+
 #contact{ 
   background-image: url('/assets/img/bg-contact.jpg'); 
   background-size: cover; 
   background-color: #212121;
+  padding: 40px 0;
+}
+
+#contact h2{ 
+  color: #ffffff;
+  margin: 40px;
 }
 
 #contact a, #contact p, #contact strong{ 
@@ -42,7 +52,8 @@ h1,h2,h3,h4,h5,h6{
   color: #00cccc;
 }
 
-#contact strong a{
+#contact strong a:hover{
+  color: #00cccc;
   text-decoration: underline;
 }
 
