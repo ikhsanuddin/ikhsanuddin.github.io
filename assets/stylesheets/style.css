@@ -13,6 +13,10 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat', sans-serif;
 }
 
+h2{
+  margin: 40px auto;
+}
+
 /* ====== Section ====== */
 
   /* Custom, iPhone Retina */ 
@@ -22,6 +26,8 @@ h1,h2,h3,h4,h5,h6{
         background-image: url(/assets/img/header.jpg);
         background-size: cover;
         background-color: #f5f5f5;
+        box-shadow: inset 0 -15px 40px -10px #dedede;
+        border-radius: 0 !important;
       }
 
       #contact div{
@@ -77,7 +83,6 @@ h1,h2,h3,h4,h5,h6{
 
 #contact h2{ 
   color: #ffffff;
-  margin: 40px;
 }
 
 #contact a, #contact p, #contact strong{ 
