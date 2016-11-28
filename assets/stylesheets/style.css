@@ -79,6 +79,12 @@ img{
 
     }
 
+/* ====== Flow ====== */
+
+#flow .container div{
+  margin: 15px auto;
+}
+
 /* ====== Contact ====== */
 #copyright {
   color: #ffffff;
