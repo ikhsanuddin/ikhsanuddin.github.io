@@ -5,7 +5,38 @@
     </h1>
     <section class="flex flex-align-center flex-justify-center">
       <h2>Overview</h2>
-      <instagram-feed></instagram-feed>
+      <div class="overflow-0 p-4">
+        <div class="col-6">
+          <div class="card round">
+            <div class="card-header">
+              <img src="" class="avatar" alt="">
+            </div>
+            <div class="card-body">
+              <div class="item-sq" style="background-image: url(http://abduzeedo.com/sites/default/files/styles/home_cover/public/originals/coverui.jpg?itok=hy01bELG)">
+              </div>
+            </div>
+            <div class="card-desc">
+              Haha hihi<br>yohasdasd asjdaksdh kalsdkj<br>kasljd
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card round">
+            <div class="card-header">
+              <img src="" class="avatar" alt="">
+            </div>
+            <div class="card-body">
+              <div class="item-sq" style="background-image: url(http://abduzeedo.com/sites/default/files/styles/home_cover/public/originals/coverui.jpg?itok=hy01bELG)">
+              </div>
+            </div>
+            <div class="card-desc">
+              Haha hihi<br>yohasdasd asjdaksdh kalsdkj<br>kasljd
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
   </main>
 </template>
