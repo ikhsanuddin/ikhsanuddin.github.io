@@ -1,53 +1,28 @@
 <template>
   <main id="app">
-    <h1>
-      Test
-    </h1>
-    <section class="flex flex-align-center flex-justify-center">
-      <h2>Overview</h2>
-      <div class="overflow-0 p-4">
-        <div class="col-6">
-          <div class="card round">
-            <div class="card-header">
-              <img src="" class="avatar" alt="">
-            </div>
-            <div class="card-body">
-              <div class="item-sq" style="background-image: url(http://abduzeedo.com/sites/default/files/styles/home_cover/public/originals/coverui.jpg?itok=hy01bELG)">
-              </div>
-            </div>
-            <div class="card-desc">
-              Haha hihi<br>yohasdasd asjdaksdh kalsdkj<br>kasljd
-            </div>
-          </div>
-        </div>
-
-        <div class="col-6">
-          <div class="card round">
-            <div class="card-header">
-              <img src="" class="avatar" alt="">
-            </div>
-            <div class="card-body">
-              <div class="item-sq" style="background-image: url(http://abduzeedo.com/sites/default/files/styles/home_cover/public/originals/coverui.jpg?itok=hy01bELG)">
-              </div>
-            </div>
-            <div class="card-desc">
-              Haha hihi<br>yohasdasd asjdaksdh kalsdkj<br>kasljd
-            </div>
-          </div>
-        </div>
-
+    <div class="full nav">
+      <h1>
+        IKHSANUDDIN
+      </h1>
+    </div>
+    <section class="flex flex-align-center flex-justify-center p-4">
+      <div class="half">
+        <h2>Start your <b>creative journey</b> now!</h2>
+        <small>Always bring the beautiful app with vue.js</small><br>
+        <button>Request a Demo</button>
       </div>
+      <InstaFeed></InstaFeed>
     </section>
   </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import InstaFeed from './components/InstaFeed'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    InstaFeed
   }
 }
 </script>
@@ -55,6 +30,7 @@ export default {
 <style>
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 
 *{
@@ -62,18 +38,17 @@ body{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-}
-
-h1{
-  position: fixed;
-  top: 20px;
-  left: 20px;
 }
 
 .round{
@@ -92,6 +67,22 @@ h1{
   justify-content: center;
 }
 
+.full{
+  width: 100%;
+}
+
+.half{
+  width: 50%;
+}
+
+.nav{
+  position: fixed;
+  background-color: #ffffff;
+  padding-left: 15px;
+  text-align: left;
+  z-index: 1000;
+}
+
 section{
   min-height: 100vh;
 }
@@ -101,7 +92,7 @@ section{
   padding-top: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: beige;
+  background-color: #ffffff;
 }
 
 .overflow-0{
@@ -109,18 +100,18 @@ section{
 }
 
 .card{
-  background-color: beige;
+  background-color: #ffffff;
   border: 1px solid #fafafa;
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
   transition: all 0.2s ease;
 }
 
 .card:hover{
-  filter: brightness(1.02);
+  filter: brightness(1.1);
 }
 .card:active{
   transform: scale(0.97);
-  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
 }
 
 .card .card-desc, 
