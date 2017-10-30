@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import VueInstagram from 'vue-instagram'
+import BootstrapVue from 'bootstrap-vue'
 
+Vue.use(BootstrapVue)
 Vue.use(VueInstagram)
 Vue.config.productionTip = false
 
